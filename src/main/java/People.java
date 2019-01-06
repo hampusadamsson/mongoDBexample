@@ -1,9 +1,6 @@
-import org.bson.Document;
-
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 public class People implements Serializable{
     private String name;
@@ -45,9 +42,11 @@ public class People implements Serializable{
 
     public void print(){
         System.out.println(this.getName() + " " + this.getLastName());
-        for (People p : this.relatives){
-            System.out.print("\t");
-            p.print();
+        if(!(this.relatives == null)){
+            for (People p : this.relatives){
+                System.out.print("\t");
+                p.print();
+            }
         }
     }
 
