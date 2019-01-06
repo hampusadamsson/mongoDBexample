@@ -1,4 +1,4 @@
-# mongoDBexample
+# MongoDB example
 A simple demo on how to use mongoDB in a standard Java project (including Maven)
 
 1) Install mongoDB - https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/
